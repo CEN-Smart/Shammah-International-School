@@ -1,11 +1,11 @@
 
 <?php
 $error_message = "";
-if(isset($_POST['contact'])) {
+if(isset($_POST['Contact Us'])) {
  
     
     $email_to = "sulabknight@gmail.com";
-    $email_subject = "Contact Form";
+    $email_subject = "Contact Us Form";
  
     function died($error) {
         // your error code can go here
@@ -74,7 +74,7 @@ $headers = 'From: '.$email."\r\n".
 'Reply-To: '.$email."\r\n" .
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers);  
-header('location:contact.html');
+header('location:Contact Us.html');
 ?>
 
 
@@ -82,7 +82,7 @@ header('location:contact.html');
  
 <!-- include your own success html here -->
  
-Thank you for contacting us. We will be in touch with you very soon.
+Thank you for Contact Using us. We will be in touch with you very soon.
  
 <?php
  
